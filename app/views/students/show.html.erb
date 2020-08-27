@@ -1,0 +1,7 @@
+<h1> Student Show Page </h1>
+
+<h3> <%= @student.to_s %> </h3>
+<br>
+<%= link_to "Edit Student", edit_student_path(@student.id) %>
+<br>
+<%= link_to "Return to Index", students_path %> 

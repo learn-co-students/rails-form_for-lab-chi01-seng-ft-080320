@@ -1,0 +1,8 @@
+<h1> Class Show Page </h1>
+
+<h3> Class: <%= @school_class.title %> </h3>
+<p> Room Number: <%= @school_class.room_number %> </p>
+<br>
+<br>
+<%= link_to "Edit Class", edit_school_class_path(@school_class.id) %><br>
+<%= link_to "Return to Index", school_classes_path %>
