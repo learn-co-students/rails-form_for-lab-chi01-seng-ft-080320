@@ -1,0 +1,8 @@
+<h1> Index Page </h1>
+
+<% @school_classes.each do |school_class|%>
+<%= link_to "#{school_class.title}, room: #{school_class.room_number}", school_class_path(school_class.id) %><br>
+<% end %>
+<br>
+<br>
+<%= link_to "Create New Class", new_school_class_path %>
