@@ -1,0 +1,7 @@
+<h1> We meet AGAIN </h1>
+
+<p>First Name: <%=@student.first_name%></p>
+<p>Last Name: <%=@student.last_name%></p>
+
+<%= button_to "Back to Index", students_path, method: :get%>
+<%= button_to "Edit", edit_student_path(@student), method: :get%>

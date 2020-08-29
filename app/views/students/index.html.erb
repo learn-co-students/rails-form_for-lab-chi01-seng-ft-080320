@@ -1,0 +1,9 @@
+<h1> You did it, you're garbage </h1>
+
+<% @students.each do |student| %>
+<p><%= link_to(student.first_name, student_path(student)) %></p>
+<%end%>
+
+<%= button_to "Join us, gooble-gobble", new_student_path, method: :get%>
+
+
